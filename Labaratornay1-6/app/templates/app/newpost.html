@@ -1,0 +1,18 @@
+﻿{% extends "app/layout.html" %}
+
+
+{% block content %}
+
+ <form method="POST"  enctype="multipart/form-data">{% csrf_token %} {# защита от атак CSRF#}
+
+ <div>
+
+ {{form.as_p}}
+
+ <button type="submit" class="save btn btn-default" > Отправить комментарий </button>
+
+ </div>
+
+ </form>
+
+{% endblock %}
