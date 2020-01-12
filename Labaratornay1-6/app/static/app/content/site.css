@@ -41,3 +41,60 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
+/************************************************************/
+.lead {
+    color: #b94a48;
+    border: 5px solid #ff6a00;
+    font-family: 'Comic Sans MS';
+    font-style: italic;
+    text-align: center;
+    text-indent: 90px;
+    text-overflow: ellipsis;
+    margin: 10px;
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+    background: radial-gradient(circle closest-side, #94c37e 10px, white 190px, white 150px, yellow 400px);
+    -webkit-animation-name: spaceOutUp;
+    animation-name: spaceOutUp;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
+.navbar {
+    font-size: 140%;
+    font-family: 'Arial Narrow';
+    font-style: italic;
+    text-shadow: 1px 1px 1px white;
+    -webkit-animation-name: spaceOutUp;
+    animation-name: spaceOutUp;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes spaceOutUp {
+    from {
+        opacity: 0;
+        -webkit-transform-origin: 50% 0%;
+        -webkit-transform: scale(.2) translate(0%, -200%);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform-origin: 50% 0%;
+        -webkit-transform: scale(1) translate(0%, 0%);
+    }
+}
+
+@keyframes spaceOutUp {
+    from {
+        opacity: 0;
+        transform-origin: 50% 0%;
+        transform: scale(.2) translate(0%, -200%);
+    }
+
+    to {
+        opacity: 1;
+        transform-origin: 50% 0%;
+        transform: scale(1) translate(0%, 0%);
+    }
+}
+
